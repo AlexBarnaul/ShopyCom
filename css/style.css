@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr - Black";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Harmonia Sans Pro Cyr - Black"), local("HarmoniaSansProCyr-Black"), url("../fonts/HarmoniaSansProCyr-Black.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-Black.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr - Bold";
+  font-weight: 400;
+  font-style: normal;
+  src: local("HarmoniaSansProCyr-Bold"), local("Harmonia Sans Pro Cyr - Bold"), url("../fonts/HarmoniaSansProCyr-Bold.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-Bold.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr - Light";
+  font-weight: 300;
+  font-style: normal;
+  src: local("HarmoniaSansProCyr-Light"), local("Harmonia Sans Pro Cyr - Light"), url("../fonts/HarmoniaSansProCyr-Light.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-Light.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr - Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("HarmoniaSansProCyr-Regular"), local("Harmonia Sans Pro Cyr - Regular"), url("../fonts/HarmoniaSansProCyr-Regular.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-Regular.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr - SemiBd";
+  font-weight: 600;
+  font-style: normal;
+  src: local("HarmoniaSansProCyr-SemiBd"), local("Harmonia Sans Pro Cyr - SemiBd"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-SemiBd.ttf") format("truetype");
+}
+.main-header__contacts {
+  border-bottom: 1px solid rgba(230, 232, 235, 0.5);
+}
+
+.contacts__wrapper {
+  padding: 20px 0;
+  min-width: 1050px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__container {
+  min-width: 255px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__mail-icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+}
+
+.contacts__link {
+  position: relative;
+  padding-left: 27px;
+  color: #34404b;
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.contacts__phone-icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+}
+
+.contacts__link:hover .red {
+  fill: red;
+}
+
+/*# sourceMappingURL=style.css.map */

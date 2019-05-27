@@ -1,0 +1,42 @@
+.contacts__wrapper {
+	padding: 20px 0;
+	min-width: 1050px;
+	max-width: 1200px;
+	box-sizing: border-box;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacts__container {
+	min-width: 255px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacts__mail-icon {
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 0;
+}
+
+.contacts__link {
+	position: relative;
+	padding-left: 27px;
+	color: #34404b;
+	@include fontRegular(12px, 12px);
+}
+
+.contacts__phone-icon {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+}
+
+.contacts__link:hover .red {
+	fill: red;
+}
