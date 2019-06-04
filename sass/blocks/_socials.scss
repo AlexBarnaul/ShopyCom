@@ -1,0 +1,10 @@
+.socials__link {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+
+	&:hover .icon-path {
+		fill: $orange;
+	}
+}

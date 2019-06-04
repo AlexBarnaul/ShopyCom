@@ -1,12 +1,13 @@
 .contacts__wrapper {
-	padding: 20px 0;
+	padding: 20px 40px;
 	min-width: 1050px;
-	max-width: 1200px;
+	max-width: 1280px;
 	box-sizing: border-box;
 	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 auto;
 }
 
 .contacts__container {
@@ -21,6 +22,7 @@
 	height: 17px;
 	position: absolute;
 	left: 0;
+	top: -3px;
 }
 
 .contacts__link {
@@ -28,6 +30,24 @@
 	padding-left: 27px;
 	color: #34404b;
 	@include fontRegular(12px, 12px);
+	text-decoration: none;
+	background-image: url("../img/twitter.svg");
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	&:hover .icon-path {
+		fill: $orange;
+	}
+
+	&:active {
+		color: $orangeActive;
+	}
+
+	&:hover {
+		text-decoration: underline;
+		color: $orange;
+	}
 }
 
 .contacts__phone-icon {
@@ -35,8 +55,5 @@
 	height: 15px;
 	position: absolute;
 	left: 0;
-}
-
-.contacts__link:hover .red {
-	fill: red;
+	top: -2px;
 }
