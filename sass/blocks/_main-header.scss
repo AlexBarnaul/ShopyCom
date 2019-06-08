@@ -7,3 +7,50 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.main-header__navbar {
+	min-height: 120px;
+	max-width: 1280px;
+	min-width: 1050px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media(min-width:1000px) {
+	.main-header {
+		background-image: url("../img/Product_1.png");
+		background-repeat: no-repeat;
+		background-size: 144px auto;
+		background-position: center center;
+	}
+
+	@media(min-resolution:144dpi),
+	(min-resolution:1.5dppx) {
+		.main-header {
+			background-image: url("../img/Product_1@2x.png");
+		}
+	}
+}*/

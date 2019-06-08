@@ -31,10 +31,6 @@
 	color: #34404b;
 	@include fontRegular(12px, 12px);
 	text-decoration: none;
-	background-image: url("../img/twitter.svg");
-	background-size: 24px 24px;
-	background-repeat: no-repeat;
-	background-position: center center;
 
 	&:hover .icon-path {
 		fill: $orange;

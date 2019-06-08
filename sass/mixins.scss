@@ -5,3 +5,9 @@
 	line-height: $lineHeight;
 	font-size: $fontSize;
 }
+
+@mixin ulReset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

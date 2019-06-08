@@ -28,10 +28,6 @@
   font-style: normal;
   src: local("HarmoniaSansProCyr-SemiBd"), local("Harmonia Sans Pro Cyr - SemiBd"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-SemiBd.ttf") format("truetype");
 }
-.hovered-orange:hover {
-  fill: #ff5912;
-}
-
 .main-header__contacts {
   border-bottom: 1px solid rgba(230, 232, 235, 0.5);
 }
@@ -42,6 +38,30 @@
   justify-content: space-between;
 }
 
+.main-header__navbar {
+  min-height: 120px;
+  max-width: 1280px;
+  min-width: 1050px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/*@media(min-width:1000px) {
+	.main-header {
+		background-image: url("../img/Product_1.png");
+		background-repeat: no-repeat;
+		background-size: 144px auto;
+		background-position: center center;
+	}
+
+	@media(min-resolution:144dpi),
+	(min-resolution:1.5dppx) {
+		.main-header {
+			background-image: url("../img/Product_1@2x.png");
+		}
+	}
+}*/
 .contacts__wrapper {
   padding: 20px 40px;
   min-width: 1050px;
@@ -79,10 +99,6 @@
   line-height: 12px;
   font-size: 12px;
   text-decoration: none;
-  background-image: url("../img/twitter.svg");
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .contacts__link:hover .icon-path {
   fill: #ff5912;
@@ -111,6 +127,119 @@
 }
 .socials__link:hover .icon-path {
   fill: #ff5912;
+}
+
+.navbar__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__item {
+  margin-right: 45px;
+}
+.navbar__item--user {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.navbar__link {
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #34404b;
+}
+.navbar__link--logo:active {
+  opacity: 0.7;
+}
+.navbar__link:hover {
+  color: #ff5912;
+}
+.navbar__link:active {
+  color: #c53b00;
+}
+
+.user {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 110px;
+  margin-left: auto;
+}
+
+.user__search-submit,
+.user__cart-btn {
+  box-shadow: none;
+  background-color: transparent;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.user__search-submit:hover .icon-path,
+.user__cart-btn:hover .icon-path {
+  fill: #ff5912;
+}
+
+.user__cart-btn {
+  position: relative;
+}
+.user__cart-btn::after {
+  content: "5";
+  width: 18px;
+  height: 18px;
+  background-color: #ff5912;
+  display: block;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 18px;
+  top: -21px;
+}
+
+.user__link:hover .icon-path {
+  fill: #ff5912;
+}
+
+.hovered-orange:hover {
+  fill: #ff5912;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.current {
+  color: #ff5912;
+}
+
+.icon-path {
+  fill: #34404b;
 }
 
 /*# sourceMappingURL=style.css.map */
