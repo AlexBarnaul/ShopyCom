@@ -1,0 +1,91 @@
+.promo__inner {
+	width: 570px;
+	margin-left: 100px;
+	position: relative;
+}
+
+.promo__carousel-inner {
+	height: 649px;
+	max-width: 1280px;
+	min-width: 1050px;
+	margin: 0 auto;
+}
+
+.promo__title {
+	min-height: 37px;
+	color: $orange;
+	@include fontBlack(52px, 70px);
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+.promo__stuff {
+	@include fontSemiBold(18px, 30px);
+	color: #3c4751;
+	padding: 0;
+	margin: 0;
+}
+
+.promo__text {
+	@include fontRegular(16px, 30px);
+	color: #495662;
+	padding: 0;
+	margin: 0;
+}
+
+.promo__img {
+	width: 798px;
+	height: 649px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.promo__carousel-item {
+	align-items: center;
+	height: 649px;
+}
+
+.promo__carousel-item.active {
+	align-items: center;
+	display: flex;
+	height: 649px;
+}
+
+.promo__container-price {
+	@include fontSemiBold(18px, 23px);
+	display: flex;
+	justify-content: space-between;
+	color: #34404b;
+	min-width: 95px;
+	max-width: 100px;
+	margin: 0;
+	padding: 0;
+	margin-top: 40px;
+}
+
+.promo__price-value,
+.promo__price-termin {
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-right: 7px;
+}
+
+.promo__link-order {
+	display: block;
+	@include fontSemiBold(18px, 24px);
+	text-decoration: none;
+	color: $orange;
+	position: absolute;
+	bottom: 0;
+	left: 120px;
+	&:hover .promo__order-text {
+		color: lighten($orange, 15%);
+	}
+}
+
+.promo__icon-order {
+	fill: $orange;
+}

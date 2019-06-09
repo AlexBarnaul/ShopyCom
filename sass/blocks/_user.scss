@@ -1,0 +1,47 @@
+.user {
+	@include ulReset;
+	@include fontRegular(10px, 30px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 110px;
+	margin-left: auto;
+}
+
+.user__search-submit,
+.user__cart-btn {
+	box-shadow: none;
+	background-color: transparent;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+
+	&:hover .icon-path {
+		fill: $orange;
+	}
+}
+
+.user__cart-btn {
+	position: relative;
+
+	&::after {
+		content: "5";
+		width: 18px;
+		height: 18px;
+		background-color: $orange;
+		display: block;
+		position: absolute;
+		text-align: center;
+		vertical-align: middle;
+		color: #fff;
+		border-radius: 50%;
+		line-height: 18px;
+		top: -21px;
+	}
+}
+
+.user__link:hover .icon-path {
+	fill: $orange;
+}

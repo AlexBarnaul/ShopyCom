@@ -1,0 +1,19 @@
+ul.user
+	li.user__search
+		//SEARCH FORM
+		form.user__search-form(method="get" action="#")
+			label.user__search-label.visually-hidden(for="search")
+			input.user__search-field.visually-hidden(id="search" type="search")
+			button.user__search-submit(type="submit" aria-label="search button")
+				svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17").
+					<path class="icon-path" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+	li.user__login
+		//LOGIN
+		a.user__link(href="#" aria-label="login link")
+			svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 17 17").
+				<path class="icon-path" d="M13.31 11.5a2.38 2.38 0 0 0-.87-1.24 11.26 11.26 0 0 0-2.7-1.15 3.6 3.6 0 0 1-.65-.28.76.76 0 0 1-.29-.52 2.59 2.59 0 0 1 0-.31 6.73 6.73 0 0 0 1.07-3.64 2.14 2.14 0 0 0-2.41-2.45A2.14 2.14 0 0 0 5 4.36a6.64 6.64 0 0 0 1.23 3.73v.21a.75.75 0 0 1-.29.52 3.57 3.57 0 0 1-.65.28 11.21 11.21 0 0 0-2.7 1.13 2.46 2.46 0 0 0-.87 1.27 5.12 5.12 0 0 0-.22 1.61h12.03a5.12 5.12 0 0 0-.22-1.61z"/>
+	li.user__cart
+		//CART
+		button.user__cart-btn(aria-label="show cart button")
+			svg(xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15").
+				<circle class="icon-path" cx="4.5" cy="13.5" r="1.5"/><circle class="icon-path" cx="12.5" cy="13.5" r="1.5"/><path class="icon-path" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
