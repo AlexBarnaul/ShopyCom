@@ -28,6 +28,35 @@
   font-style: normal;
   src: local("HarmoniaSansProCyr-SemiBd"), local("Harmonia Sans Pro Cyr - SemiBd"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-SemiBd.ttf") format("truetype");
 }
+.hovered-orange:hover {
+  fill: #ff5912;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.current {
+  color: #ff5912 !important;
+}
+
+.icon-path {
+  fill: #34404b;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .main-header__contacts {
   border-bottom: 1px solid rgba(230, 232, 235, 0.5);
 }
@@ -39,7 +68,7 @@
 }
 
 .main-header__navbar {
-  min-height: 120px;
+  min-height: 85px;
   max-width: 1280px;
   min-width: 1050px;
   padding: 20px 40px;
@@ -219,27 +248,116 @@
   fill: #ff5912;
 }
 
-.hovered-orange:hover {
-  fill: #ff5912;
+.promo__inner {
+  width: 570px;
+  margin-left: 100px;
+  position: relative;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+.promo__carousel-inner {
+  height: 649px;
+  max-width: 1280px;
+  min-width: 1050px;
+  margin: 0 auto;
 }
 
-.current {
+.promo__title {
+  min-height: 37px;
   color: #ff5912;
+  font-family: "Harmonia Sans Pro Cyr - Black", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 70px;
+  font-size: 52px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
-.icon-path {
-  fill: #34404b;
+.promo__stuff {
+  font-family: "Harmonia Sans Pro Cyr - SemiBd", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 30px;
+  font-size: 18px;
+  color: #3c4751;
+  padding: 0;
+  margin: 0;
+}
+
+.promo__text {
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  font-size: 16px;
+  color: #495662;
+  padding: 0;
+  margin: 0;
+}
+
+.promo__img {
+  width: 798px;
+  height: 649px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.promo__carousel-item {
+  align-items: center;
+  height: 649px;
+}
+
+.promo__carousel-item.active {
+  align-items: center;
+  display: flex;
+  height: 649px;
+}
+
+.promo__container-price {
+  font-family: "Harmonia Sans Pro Cyr - SemiBd", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 23px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  color: #34404b;
+  min-width: 95px;
+  max-width: 100px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.promo__price-value,
+.promo__price-termin {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-right: 7px;
+}
+
+.promo__link-order {
+  display: block;
+  font-family: "Harmonia Sans Pro Cyr - SemiBd", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ff5912;
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+}
+.promo__link-order:hover .promo__order-text {
+  color: #ff8f5f;
+}
+
+.promo__icon-order {
+  fill: #ff5912;
 }
 
 /*# sourceMappingURL=style.css.map */

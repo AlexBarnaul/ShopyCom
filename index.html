@@ -3,12 +3,19 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js" async></script>
     <title>Home page ShopyShop</title>
     <body><svg class="mail-icon" style="display:none;" xmlns="http://www.w3.org/2000/svg">
 	<defs>
 		<symbol viewBox="0 0 100.354 100.352" id="mail-icon">
 			<path class="mail-path" d="M93.09 76.224c.047-.145.079-.298.079-.459V22.638c0-.162-.032-.316-.08-.462-.007-.02-.011-.04-.019-.06a1.492 1.492 0 0 0-.276-.46c-.008-.009-.009-.02-.017-.029-.005-.005-.011-.007-.016-.012a1.504 1.504 0 0 0-.442-.323c-.013-.006-.023-.014-.036-.02a1.48 1.48 0 0 0-.511-.123c-.018-.001-.035-.005-.053-.005-.017-.001-.032-.005-.049-.005H8.465c-.017 0-.033.004-.05.005l-.048.005a1.497 1.497 0 0 0-.518.125c-.01.004-.018.011-.028.015-.17.081-.321.191-.448.327-.005.005-.011.006-.016.011-.008.008-.009.019-.017.028a1.5 1.5 0 0 0-.277.461c-.008.02-.012.04-.019.061-.048.146-.08.3-.08.462v53.128c0 .164.033.32.082.468l.018.059a1.5 1.5 0 0 0 .28.462c.007.008.009.018.016.026.006.007.014.011.021.018.049.051.103.096.159.14.025.019.047.042.073.06.066.046.137.083.21.117.018.008.034.021.052.028.181.077.38.121.589.121h83.204c.209 0 .408-.043.589-.121.028-.012.054-.03.081-.044.062-.031.124-.063.181-.102.03-.021.057-.048.086-.071.051-.041.101-.082.145-.129l.025-.022c.008-.009.01-.021.018-.03a1.5 1.5 0 0 0 .275-.458c.01-.022.015-.043.022-.065zM9.965 26.04l25.247 23.061L9.965 72.346V26.04zm51.746 21.931c-.104.068-.214.125-.301.221-.033.036-.044.083-.073.121l-11.27 10.294-37.736-34.469h75.472L61.711 47.971zm-24.275 3.161l11.619 10.613a1.496 1.496 0 0 0 2.023 0l11.475-10.481 25.243 23.002H12.309l25.127-23.134zm27.342-1.9L90.169 26.04v46.33L64.778 49.232z" />
+		</symbol>
+		<symbol viewBox="0 0 243.5 243.5" id="add-to-cart-icon">
+			<path d="M113.403 157.775a7.5 7.5 0 1 0 14.92-1.543l-3.458-33.468a7.5 7.5 0 0 0-14.921 1.542l3.459 33.469zM160.338 164.464a7.502 7.502 0 0 0 8.231-6.689l3.458-33.468a7.499 7.499 0 0 0-6.689-8.231c-4.121-.422-7.806 2.57-8.232 6.689l-3.458 33.468a7.5 7.5 0 0 0 6.69 8.231zM102.266 197.064c-12.801 0-23.215 10.414-23.215 23.215 0 12.804 10.414 23.221 23.215 23.221s23.216-10.417 23.216-23.221c-.001-12.8-10.415-23.215-23.216-23.215zm0 31.436c-4.53 0-8.215-3.688-8.215-8.221 0-4.53 3.685-8.215 8.215-8.215 4.53 0 8.216 3.685 8.216 8.215-.001 4.533-3.686 8.221-8.216 8.221zM179.707 197.064c-12.801 0-23.216 10.414-23.216 23.215 0 12.804 10.415 23.221 23.216 23.221 12.802 0 23.218-10.417 23.218-23.221 0-12.8-10.416-23.215-23.218-23.215zm0 31.436c-4.53 0-8.216-3.688-8.216-8.221 0-4.53 3.686-8.215 8.216-8.215 4.531 0 8.218 3.685 8.218 8.215 0 4.533-3.687 8.221-8.218 8.221z" />
+			<path d="M224.569 91.057a7.5 7.5 0 0 0-5.933-2.913H69.141l-6.277-24.141a7.5 7.5 0 0 0-7.259-5.612h-30.74a7.5 7.5 0 0 0 0 15h24.941l6.221 23.922c.034.15.073.299.116.446l23.15 89.022a7.5 7.5 0 0 0 7.259 5.612h108.874a7.5 7.5 0 0 0 7.259-5.612l23.211-89.25a7.508 7.508 0 0 0-1.327-6.474zm-34.943 86.338H92.35l-19.309-74.25h135.894l-19.309 74.25z" />
+			<path d="M135.674 74.826a7.478 7.478 0 0 0 5.303 2.197c1.92 0 3.839-.732 5.303-2.197l24.28-24.28a7.5 7.5 0 1 0-10.606-10.606l-11.468 11.468.002-43.907A7.5 7.5 0 0 0 140.989 0h-.001a7.5 7.5 0 0 0-7.5 7.499l-.002 43.925-11.468-11.468a7.5 7.5 0 0 0-10.606 0 7.5 7.5 0 0 0 0 10.606l24.262 24.264z" />
 		</symbol>
 	</defs>
 </svg>
@@ -92,7 +99,92 @@
             </li>
           </ul>
         </nav>
-      </header>
+      </header><section class="promo">
+	<div class="promo_wrapper">
+		<h2 class="visually-hidden">promo</h2>
+		<!--			CAROUSEL-->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<!--			indicators-->
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner promo__carousel-inner">
+				<!--				carousel-item-->
+				<div class="carousel-item promo__carousel-item active">
+					<div class="promo__inner">
+						<h3 class="promo__title">full winter kit</h3>
+						<p class="promo__stuff">Half Jacket + Skiny Trousers + Boot leather</p>
+						<p class="promo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+						<dl class="promo__container-price">
+							<dt class="promo__price-termin">Price:</dt>
+							<dd class="promo__price-value">120$</dd>
+						</dl>
+						<a href="#" class="promo__link-order">
+							<svg width="17" height="17">
+								<use class="promo__icon-order" xlink:href="#add-to-cart-icon"></use>
+							</svg>
+							<span class="promo__order-text">order now</span>
+						</a>
+					</div>
+					<picture>
+						<source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
+						<img src="img/promo.png, img/promo@2x.png 2x" class="carousel-img promo__img" alt="full winter kit">
+					</picture>
+				</div>
+				<!--				carousel-item-->
+				<div class="carousel-item promo__carousel-item">
+					<div class="promo__inner">
+						<h3 class="promo__title">full winter kit</h3>
+						<p class="promo__stuff">Half Jacket + Skiny Trousers + Boot leather</p>
+						<p class="promo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+						<dl class="promo__container-price">
+							<dt class="promo__price-termin">Price:</dt>
+							<dd class="promo__price-value">120$</dd>
+						</dl>
+						<a href="#" class="promo__link-order">
+							<svg width="17" height="17">
+								<use class="promo__icon-order" xlink:href="#add-to-cart-icon"></use>
+							</svg>
+							<span class="promo__order-text">order now</span>
+						</a>
+					</div>
+					<picture>
+						<source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
+						<img src="img/promo.png, img/promo@2x.png 2x" class="carousel-img promo__img" alt="full winter kit">
+					</picture>
+				</div>
+				<!--				carousel-item-->
+				<div class="carousel-item promo__carousel-item">
+					<div class="promo__inner">
+						<h3 class="promo__title">full winter kit</h3>
+						<p class="promo__stuff">Half Jacket + Skiny Trousers + Boot leather</p>
+						<p class="promo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+						<dl class="promo__container-price">
+							<dt class="promo__price-termin">Price:</dt>
+							<dd class="promo__price-value">120$</dd>
+						</dl>
+						<a href="#" class="promo__link-order">
+							<svg width="17" height="17">
+								<use class="promo__icon-order" xlink:href="#add-to-cart-icon"></use>
+							</svg>
+							<span class="promo__order-text">order now</span>
+						</a>
+					</div>
+					<picture>
+						<source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
+						<img src="img/promo.png, img/promo@2x.png 2x" class="carousel-img promo__img" alt="full winter kit">
+					</picture>
+				</div>
+			</div>
+		</div>
+		<!--			CAROUSEL END-->
+	</div>
+</section>
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/carousel.min.js"></script>
     </body>
   </head>
 </html>

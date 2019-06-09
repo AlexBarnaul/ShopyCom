@@ -15,9 +15,15 @@
 }
 
 .current {
-	color: $orange;
+	color: $orange !important;
 }
 
 .icon-path {
 	fill: #34404b;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
