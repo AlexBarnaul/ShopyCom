@@ -5,3 +5,25 @@
 	line-height: $lineHeight;
 	font-size: $fontSize;
 }
+
+@mixin fontBlack($fontSize, $lineHeight) {
+	font-family: "Harmonia Sans Pro Cyr - Black", Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: $lineHeight;
+	font-size: $fontSize;
+}
+
+@mixin fontSemiBold($fontSize, $lineHeight) {
+	font-family: "Harmonia Sans Pro Cyr - SemiBd", Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	line-height: $lineHeight;
+	font-size: $fontSize;
+}
+
+@mixin ulReset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
