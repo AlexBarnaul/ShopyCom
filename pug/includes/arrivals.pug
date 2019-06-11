@@ -1,0 +1,10 @@
+//mixin card(className, src, srcset, imgWidth, imgHeight, title, price)
+section.arrivals
+	+title("NEW ARRIVALS","Lorem Ipsum is simply dummy text of the printing and typesetting industry")
+	ul.arrivals__inner
+		+card("arrivals__card", "img/Product_1.png", "img/Product_1@2x.png 2x","144","216", "Reebok Track Jacket","100$")
+		+card("arrivals__card", "img/Product_2.png", "img/Product_2@2x.png 2x","159","214", "Reebok Track Jacket","100$")
+		+card("arrivals__card", "img/Product_3.png", "img/Product_3@2x.png 2x","170","211", "Reebok Track Jacket","100$")
+		+card("arrivals__card", "img/Product_1.png", "img/Product_1@2x.png 2x","144","216", "Reebok Track Jacket","100$")
+	button.arrivals__more(type="button")
+		span.arrivals__more-decor

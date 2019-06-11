@@ -1,0 +1,25 @@
+.title__wrapper {
+	margin: 0 auto;
+	max-width: 600px;
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+
+.title__heading {
+	display: block;
+	padding: 0;
+	margin: 0;
+	@include fontBlack(36px, 52px);
+	text-transform: uppercase;
+	color: #34404b;
+	text-align: center;
+}
+
+.title__subtitle {
+	display: block;
+	margin: 0 auto;
+	@include fontRegular(16px, 30px);
+	color: #495662;
+	max-width: 600px;
+	text-align: center;
+}
