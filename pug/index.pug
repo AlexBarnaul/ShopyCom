@@ -5,13 +5,19 @@ html
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
 		link(rel="stylesheet" href="css/carousel.css")
 		link(rel="stylesheet" href="css/style.css")
-		script(src="js/picturefill.min.js" async)
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js")
 		title Home page ShopyShop
-		body
-			include ../img/sprite.svg
-			header.main-header
-				include includes/contacts.pug
-				include includes/navbar.pug
-			include includes/promo.html
-			script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-			script(type="text/javascript" src="js/carousel.min.js")
+	body
+		include includes/mixins.pug
+		include ../img/sprite.svg
+		header.main-header
+			include includes/contacts.pug
+			include includes/navbar.pug
+		include includes/promo.html
+		main.content
+			h1.visually-hidden shoppy the Eshop
+			include includes/arrivals.pug
+			include includes/advert.pug
+			include includes/popular.pug
+		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(type="text/javascript" src="js/carousel.min.js")

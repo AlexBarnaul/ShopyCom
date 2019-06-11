@@ -27,3 +27,14 @@
 	margin: 0;
 	list-style: none;
 }
+
+@mixin buttonReset {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	cursor: pointer;
+	box-sizing: border-box;
+
+}

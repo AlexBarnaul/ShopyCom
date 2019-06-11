@@ -1,0 +1,41 @@
+//title
+mixin title(heading, subTitle)
+	.title
+		.title__wrapper
+			h3.title__heading= heading
+			p.title__subtitle= subTitle
+//card
+mixin card(className, src, srcset, imgWidth, imgHeight, title, price)
+	li.card(class=className tabindex="0" aria-label="card")
+		img.card__img(src=src, srcset=srcset, width=imgWidth, height=imgHeight alt="jacket")
+		h4.card__title= title
+		span.card__price= price
+		p.card__size
+			span sizes:
+			input(type="radio" id="s" name="sizes" value="s" checked )
+			input(type="radio" id="m" name="sizes" value="m" )
+			input(type="radio" id="l" name="sizes" value="l" )
+			input(type="radio" id="xl" name="sizes" value="xl" )
+			label.card__label-size( for="s") s
+			label.card__label-size( for="m") m
+			label.card__label-size( for="l") l
+			label.card__label-size( for="xl") xl
+		p.card__color
+			input(type="radio" name="color" id="green" value="green" class="visually-hidden")
+			input(type="radio" name="color" id="red" value="red" class="visually-hidden")
+			input(type="radio" name="color" id="black" value="black" class="visually-hidden")
+			input(type="radio" name="color" id="blue" value="blue" class="visually-hidden")
+			label.card__label-color(for="green")
+			label.card__label-color(for="red")
+			label.card__label-color(for="black")
+			label.card__label-color(for="blue")
+		p.card__buttons
+			a.card__link-share(href="#" aria-label="share")
+				svg(width="18" height="18")
+					use(class="card__share-img hovered-orange" xlink:href="#share-icon")
+			button.card__add(type="button")
+				svg(width="22" height="22")
+					use(class="card__cart-img hovered-orange" xlink:href="#add-to-cart-icon")
+			button.card__like(type="button")
+				svg(width="20" height="20")
+					use(class="card__like-img hovered-orange" xlink:href="#like-icon")

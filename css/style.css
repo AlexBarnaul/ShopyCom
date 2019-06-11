@@ -70,7 +70,7 @@
 .main-header__navbar {
   min-height: 85px;
   max-width: 1280px;
-  min-width: 1050px;
+  min-width: 950px;
   padding: 20px 40px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -93,7 +93,7 @@
 }*/
 .contacts__wrapper {
   padding: 20px 40px;
-  min-width: 1050px;
+  min-width: 950px;
   max-width: 1280px;
   box-sizing: border-box;
   height: 60px;
@@ -257,7 +257,7 @@
 .promo__carousel-inner {
   height: 649px;
   max-width: 1280px;
-  min-width: 1050px;
+  min-width: 950px;
   margin: 0 auto;
 }
 
@@ -358,6 +358,354 @@
 
 .promo__icon-order {
   fill: #ff5912;
+}
+
+.title__wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.title__heading {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: "Harmonia Sans Pro Cyr - Black", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 52px;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #34404b;
+  text-align: center;
+}
+
+.title__subtitle {
+  display: block;
+  margin: 0 auto;
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  font-size: 16px;
+  color: #495662;
+  max-width: 600px;
+  text-align: center;
+}
+
+.arrivals__inner {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 1230px;
+  min-width: 950px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.arrivals__card {
+  width: 270px;
+  height: 365px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.arrivals__more {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1160px;
+  min-width: 950px;
+}
+.arrivals__more-decor {
+  width: 10px;
+  height: 10px;
+  background-color: #ff5912;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+}
+.arrivals__more-decor:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ff5912;
+  display: inline-block;
+  border-radius: 50%;
+  left: -20px;
+}
+.arrivals__more-decor:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ff5912;
+  display: inline-block;
+  border-radius: 50%;
+  left: 20px;
+}
+
+.card {
+  padding: 20px 25px;
+  background-color: #fff;
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 18px;
+  color: #34404b;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card:hover, .card:focus {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+.card:hover .card__title, .card:focus .card__title {
+  color: #ff5912;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 31px;
+  margin-top: 0;
+}
+.card:hover .card__size, .card:focus .card__size {
+  display: block;
+  margin-bottom: 31px;
+  margin-top: 0;
+}
+.card:hover .card__color, .card:focus .card__color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+.card:hover .card__buttons, .card:focus .card__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card:hover .card__price, .card:focus .card__price {
+  display: none;
+}
+.card:hover .card__img, .card:focus .card__img {
+  width: 25%;
+  height: auto;
+  margin-bottom: 31px;
+}
+
+.card__size {
+  display: none;
+}
+
+.card__color {
+  width: 75px;
+  display: none;
+}
+
+.card__label-size {
+  cursor: pointer;
+}
+
+.card__buttons {
+  display: none;
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+  margin-left: -55px;
+  width: 110px;
+  color: #34404b;
+}
+.card__buttons::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -17px;
+  width: 170px;
+  height: 1px;
+  background-color: grey;
+  left: 50%;
+  margin-left: -85px;
+  opacity: 0.3;
+}
+
+.card__price {
+  color: #ff5912;
+}
+
+.card__add,
+.card__like {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.card__label-color {
+  display: block;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.card__label-color[for=green] {
+  background-color: #2fd967;
+}
+.card__label-color[for=red] {
+  background-color: #e12e3f;
+}
+.card__label-color[for=black] {
+  background-color: #000;
+}
+.card__label-color[for=blue] {
+  background-color: #3ab3ff;
+}
+
+.advert__bar {
+  display: flex;
+  justify-content: space-between;
+  min-width: 950px;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.advert__link {
+  width: 670px;
+  height: 100px;
+  border: 1px solid rgba(52, 64, 75, 0.05);
+  background-color: #ffffff;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  padding-top: 10px;
+  box-sizing: border-box;
+  position: relative;
+  background-image: url("../img/sale-50-icon.png");
+  background-size: 80px 80px;
+  background-position: 55px;
+  background-repeat: no-repeat;
+}
+
+.advert__title {
+  font-family: "Harmonia Sans Pro Cyr - Black", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 35px;
+  font-size: 22px;
+  padding: 0;
+  margin: 0 auto;
+  color: #34404b;
+  margin-left: 180px;
+}
+
+.advert__text {
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 38px;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 auto;
+  text-transform: capitalize;
+  color: #495662;
+  margin-left: 180px;
+}
+
+.advert__price-container {
+  position: absolute;
+  right: 70px;
+  width: 83px;
+  white-space: nowrap;
+  top: 37px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Harmonia Sans Pro Cyr - Black", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  font-size: 22px;
+  color: #ff5912;
+  align-items: center;
+  margin: 0;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .advert__link {
+    background-image: url("../img/sale-50-icon@2x.png");
+  }
+}
+.advert__vacant {
+  height: 100px;
+  width: 470px;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+.advert__vacant-link {
+  display: block;
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+}
+.advert__vacant-link::before {
+  content: "adv area";
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 16px;
+  color: #34404b;
+  display: inline-block;
+  width: 100%;
+  margin-top: 36px;
+}
+.advert__vacant-link::after {
+  display: inline-block;
+  width: 100%;
+  content: "100 x 470";
+  font-family: "Harmonia Sans Pro Cyr - Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 12px;
+  color: #34404b;
+  opacity: 0.4;
+}
+
+body {
+  background-color: #f4f6f8;
 }
 
 /*# sourceMappingURL=style.css.map */
