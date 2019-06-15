@@ -12,10 +12,10 @@ mixin card(className, src, srcset, imgWidth, imgHeight, title, price)
 		span.card__price= price
 		p.card__size
 			span sizes:
-			input(type="radio" id="s" name="sizes" value="s" checked )
-			input(type="radio" id="m" name="sizes" value="m" )
-			input(type="radio" id="l" name="sizes" value="l" )
-			input(type="radio" id="xl" name="sizes" value="xl" )
+			input(type="radio" id="s" name="sizes" value="s" checked class="visually-hidden")
+			input(type="radio" id="m" name="sizes" value="m" class="visually-hidden")
+			input(type="radio" id="l" name="sizes" value="l" class="visually-hidden")
+			input(type="radio" id="xl" name="sizes" value="xl" class="visually-hidden")
 			label.card__label-size( for="s") s
 			label.card__label-size( for="m") m
 			label.card__label-size( for="l") l

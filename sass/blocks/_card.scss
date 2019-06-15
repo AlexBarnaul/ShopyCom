@@ -7,10 +7,6 @@
 	text-align: center;
 	box-sizing: border-box;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
 
 	&:hover,
 	&:focus {
@@ -25,7 +21,7 @@
 		color: $orange;
 		margin: 0;
 		padding: 0;
-		margin-bottom: 31px;
+		margin-bottom: 22px;
 		margin-top: 0;
 	}
 
@@ -77,6 +73,7 @@
 .card__color {
 	width: 75px;
 	display: none;
+	margin: 0 auto;
 }
 
 .card__label-size {
@@ -86,7 +83,7 @@
 .card__buttons {
 	display: none;
 	position: absolute;
-	bottom: 27px;
+	bottom: 16px;
 	left: 50%;
 	margin-left: -55px;
 	width: 110px;
