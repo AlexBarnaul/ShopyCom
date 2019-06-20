@@ -7,7 +7,8 @@ mixin title(heading, subTitle)
 //card
 mixin card(className, src, srcset, imgWidth, imgHeight, title, price)
 	li.card(class=className tabindex="0" aria-label="card")
-		img.card__img(src=src, srcset=srcset, width=imgWidth, height=imgHeight alt="jacket")
+		a(href="card.html")
+			img.card__img(src=src, srcset=srcset, width=imgWidth, height=imgHeight alt="jacket")
 		h4.card__title= title
 		span.card__price= price
 		p.card__size

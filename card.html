@@ -3,10 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
-    <title>Home page ShopyShop</title>
+    <title>CARD ShopyShop</title>
   </head>
   <body>
     <!--title-->
@@ -108,101 +107,84 @@
           </li>
         </ul>
       </nav>
-    </header><section class="promo">
-	<div class="promo_wrapper">
-		<h2 class="visually-hidden">promo</h2>
-		<!--			CAROUSEL-->
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<!--			indicators-->
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner promo__carousel-inner">
-				<!--				carousel-item-->
-				<div class="carousel-item promo__carousel-item active">
-					<div class="promo__inner">
-						<h3 class="promo__title">full winter kit</h3>
-						<p class="promo__stuff">Half Jacket + Skiny Trousers + Boot leather</p>
-						<p class="promo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-						<dl class="promo__container-price">
-							<dt class="promo__price-termin">Price:</dt>
-							<dd class="promo__price-value">120$</dd>
-						</dl>
-						<a href="#" class="promo__link-order">
-							<svg width="17" height="17">
-								<use class="promo__icon-order" xlink:href="#add-to-cart-icon"></use>
-							</svg>
-							<span class="promo__order-text">order now</span>
-						</a>
-					</div>
-					<picture>
-						<source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
-						<img src="img/promo.png, img/promo@2x.png 2x" class="carousel-img promo__img" alt="full winter kit">
-					</picture>
-				</div>
-				<!--				carousel-item-->
-				<div class="carousel-item promo__carousel-item">
-					<div class="promo__inner">
-						<h3 class="promo__title">full winter kit</h3>
-						<p class="promo__stuff">Half Jacket + Skiny Trousers + Boot leather</p>
-						<p class="promo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-						<dl class="promo__container-price">
-							<dt class="promo__price-termin">Price:</dt>
-							<dd class="promo__price-value">120$</dd>
-						</dl>
-						<a href="#" class="promo__link-order">
-							<svg width="17" height="17">
-								<use class="promo__icon-order" xlink:href="#add-to-cart-icon"></use>
-							</svg>
-							<span class="promo__order-text">order now</span>
-						</a>
-					</div>
-					<picture>
-						<source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
-						<img src="img/promo.png, img/promo@2x.png 2x" class="carousel-img promo__img" alt="full winter kit">
-					</picture>
-				</div>
-				<!--				carousel-item-->
-				<div class="carousel-item promo__carousel-item">
-					<div class="promo__inner">
-						<h3 class="promo__title">full winter kit</h3>
-						<p class="promo__stuff">Half Jacket + Skiny Trousers + Boot leather</p>
-						<p class="promo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-						<dl class="promo__container-price">
-							<dt class="promo__price-termin">Price:</dt>
-							<dd class="promo__price-value">120$</dd>
-						</dl>
-						<a href="#" class="promo__link-order">
-							<svg width="17" height="17">
-								<use class="promo__icon-order" xlink:href="#add-to-cart-icon"></use>
-							</svg>
-							<span class="promo__order-text">order now</span>
-						</a>
-					</div>
-					<picture>
-						<source type="image/webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
-						<img src="img/promo.png, img/promo@2x.png 2x" class="carousel-img promo__img" alt="full winter kit">
-					</picture>
-				</div>
-			</div>
-		</div>
-		<!--			CAROUSEL END-->
-	</div>
-</section>
-
+    </header>
     <main class="content">
-      <h1 class="visually-hidden">shoppy the Eshop</h1>
-      <!--mixin card(className, src, srcset, imgWidth, imgHeight, title, price)-->
-      <section class="arrivals">
+      <h1 class="visually-hidden">shoppy the Eshop card showcase</h1>
+      <article class="card-show">
+        <div class="card-show__wrapper">
+          <!--img container-->
+          <div class="card-show__img-container">
+            <!--big img-->
+            <div class="card-show__img-box card-show__img-box--big"><img class="card-show__img" src="img/productShowBig.png" alt="parka"></div>
+            <!--small img-->
+            <div class="card-show__img-box card-show__img-box--small"><img class="card-show__img card-show__img--small" src="img/productShowSmall1.png" alt="parka"></div>
+            <!--small img-->
+            <div class="card-show__img-box card-show__img-box--small"><img class="card-show__img card-show__img--small" src="img/productShowSmall2.png" alt="parka"></div>
+            <!--small img-->
+            <div class="card-show__img-box card-show__img-box--small"><img class="card-show__img card-show__img--small" src="img/productShowSmall3.png" alt="parka"></div>
+          </div>
+          <!--description container-->
+          <div class="card-show__description-container">
+            <h2 class="card-show__title">FULL WINTER KIT</h2>
+            <p class="card-show__subtitle">Half Jacket + Skiny Trousers + Boot leather</p>
+            <p class="card-show__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry
+            </p>
+            <!--descriptions buttons-->
+            <form class="card-show__form" action="#" method="get">
+              <div class="card-show__description-inner">
+                <!--description size-->
+                <div class="card-show__size"><span>Choose Size</span>
+                  <input class="visually-hidden" type="radio" id="s" name="sizes" value="s" checked>
+                  <input class="visually-hidden" type="radio" id="m" name="sizes" value="m">
+                  <input class="visually-hidden" type="radio" id="l" name="sizes" value="l">
+                  <input class="visually-hidden" type="radio" id="xl" name="sizes" value="xl">
+                  <label class="card-show__label-size" for="s">s</label>
+                  <label class="card-show__label-size" for="m">m</label>
+                  <label class="card-show__label-size" for="l">l</label>
+                  <label class="card-show__label-size" for="xl">xl</label>
+                </div>
+                <!--description quantity-->
+                <div class="card-show__quantity"><span>Choose Quantity</span>
+                  <div class="card-show__counter-container">
+                    <button class="card-show__counter-add" aria-label="add 1 unit" type="button"></button><span class="card-show__counter-field">3</span>
+                    <button class="card-show__counter-remove" aria-label="remove 1 unit" type="button"></button>
+                  </div>
+                </div>
+                <!--order and share-->
+              </div>
+              <div class="card-show__order-bar"><span class="card-show__price">Price : 120$</span>
+                <p class="card-show__buttons"><a class="card-show__link-share" href="#" aria-label="share">
+                    <svg width="18" height="18">
+                      <use class="card__share-img hovered-orange" xlink:href="#share-icon"></use>
+                    </svg></a>
+                  <button class="card-show__add" type="button">
+                    <svg width="22" height="22">
+                      <use class="card__cart-img hovered-orange" xlink:href="#add-to-cart-icon"></use>
+                    </svg>
+                  </button>
+                  <button class="card-show__like" type="button">
+                    <svg width="20" height="20">
+                      <use class="card__like-img hovered-orange" xlink:href="#like-icon"></use>
+                    </svg>
+                  </button>
+                </p>
+              </div>
+              <button class="card-show__submit">Order Now</button>
+            </form>
+          </div>
+        </div>
+      </article>
+      <section class="related">
             <div class="title">
               <div class="title__wrapper">
-                <h3 class="title__heading">NEW ARRIVALS</h3>
+                <h3 class="title__heading">RELATED PRODUCTS</h3>
                 <p class="title__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
               </div>
             </div>
-        <ul class="arrivals__inner">
+        <ul class="related__list">
               <li class="card arrivals__card" tabindex="0" aria-label="card"><a href="card.html"><img class="card__img" src="img/Product_1.png" srcset="img/Product_1@2x.png 2x" width="144" height="216" alt="jacket"></a>
                 <h4 class="card__title">Reebok Track Jacket</h4><span class="card__price">100$</span>
                 <p class="card__size"><span>sizes:</span>
@@ -356,83 +338,6 @@
                 </p>
               </li>
         </ul>
-        <button class="arrivals__more" type="button"><span class="arrivals__more-decor"></span></button>
-      </section>
-      <article class="advert">
-        <div class="advert__bar">
-          <aside class="advert__container"><a class="advert__link" href="#" aria-label="winter kit buy">
-              <p class="advert__title">FULL WINTER KIT</p>
-              <p class="advert__text">Half Jacket + Skiny Trousers + Boot leather</p>
-              <p class="advert__price-container">
-                <svg width="22" height="22">
-                  <use xlink:href="#add-to-cart-icon" style="fill:#ff5912;"></use>
-                </svg><span class="advert__price-value">120$</span>
-              </p></a></aside>
-          <aside class="advert__vacant"><a class="advert__vacant-link" href="#"></a></aside>
-        </div>
-      </article>
-      <section class="popular">
-        <div class="popular__inner">
-              <div class="title">
-                <div class="title__wrapper">
-                  <h3 class="title__heading">BEST SALES</h3>
-                  <p class="title__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                </div>
-              </div>
-          <ul class="popular__list">
-            <li class="popular__item"><a class="popular__link clearfix" href="#"><img class="popular__img" width="89" height="90" srcset="img/Product_sales.png, img/Product_sales@2x.png 2x" alt="best sales product"></a>
-              <div class="popular__container">
-                <h4 class="popular__title">Reebok Track Jacket</h4>
-                <ul class="popular__rating">
-                  <li class="popular__star popular__ratin-1" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-2" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-3" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-4" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-5" tabindex="0"></li>
-                </ul><span class="popular__price">100$</span>
-                <button class="popular__add" type="button">
-                  <svg>
-                    <use style="fill: #ff5912;" xlink:href="#add-to-cart-icon"></use>
-                  </svg><span>add to cart</span>
-                </button>
-              </div>
-            </li>
-            <li class="popular__item"><a class="popular__link clearfix" href="#"><img class="popular__img" width="89" height="90" srcset="img/Product_sales.png, img/Product_sales@2x.png 2x" alt="best sales product"></a>
-              <div class="popular__container">
-                <h4 class="popular__title">Reebok Track Jacket</h4>
-                <ul class="popular__rating">
-                  <li class="popular__star popular__ratin-1" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-2" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-3" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-4" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-5" tabindex="0"></li>
-                </ul><span class="popular__price">100$</span>
-                <button class="popular__add" type="button">
-                  <svg>
-                    <use style="fill: #ff5912;" xlink:href="#add-to-cart-icon"></use>
-                  </svg><span>add to cart</span>
-                </button>
-              </div>
-            </li>
-            <li class="popular__item"><a class="popular__link clearfix" href="#"><img class="popular__img" width="89" height="90" srcset="img/Product_sales.png, img/Product_sales@2x.png 2x" alt="best sales product"></a>
-              <div class="popular__container">
-                <h4 class="popular__title">Reebok Track Jacket</h4>
-                <ul class="popular__rating">
-                  <li class="popular__star popular__ratin-1" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-2" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-3" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-4" tabindex="0"></li>
-                  <li class="popular__star popular__ratin-5" tabindex="0"></li>
-                </ul><span class="popular__price">100$</span>
-                <button class="popular__add" type="button">
-                  <svg>
-                    <use style="fill: #ff5912;" xlink:href="#add-to-cart-icon"></use>
-                  </svg><span>add to cart</span>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
       </section>
       <div class="subs subs__wrapper">
         <h3 class="subs__title">NEWS LETTER</h3>
@@ -465,7 +370,5 @@
         <h4 class="footer__payments-title">Payment Methods</h4><img class="footer__payments-img" src="img/payment.png" srcset="img/payment@2x.png 2x">
       </div>
     </footer>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/carousel.min.js"></script>
   </body>
 </html>
