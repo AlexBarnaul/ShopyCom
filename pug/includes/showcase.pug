@@ -1,0 +1,65 @@
+section.showcase
+	div.showcase__wrapper
+		//showcase filters
+		ul.showcase__filters
+			//categories
+			li.showcase__filter-group
+				h3.showcase__filter-title categories
+				ul.showcase__categories
+					li.showcase__categories-item
+						a.showcase__categories-link.showcase__categories-link--active(href="#") man
+					li.showcase__categories-item
+						a.showcase__categories-link(href="#") women
+					li.showcase__categories-item
+						a.showcase__categories-link(href="#") childrens
+					li.showcase__categories-item
+						a.showcase__categories-link(href="#") hot deals
+			//price
+			li.showcase__filter-group
+				h3.showcase__filter-title price filter
+				div.showcase__price-range-box
+					div.showcase__price-grey-bar
+					div.showcase__price-darkblue-bar
+				div.showcase__outputs-box
+					label.showcase__label-from from
+						input(type="number" max="999" min="100" name="from")
+					label.showcase__label-to to
+						input(type="number" min="101" nax="1000" name="to")
+			//sizes
+			li.showcase__filter-group
+				h3.showcase__filter-title sizes
+				ul.showcase__sizes
+					li.showcase__sizes-item
+						a.showcase__sizes-link(href="#") small
+					li.showcase__sizes-item
+						a.showcase__sizes-link(href="#") medium
+					li.showcase__sizes-item
+						a.showcase__sizes-link.showcase__sizes-link--active(href="#") large
+					li.showcase__sizes-item
+						a.showcase__sizes-link(href="#") xlarge
+			//brands
+			li.showcase__filter-group
+				h3.showcase__filter-title brands
+				ul.showcase__brands
+					li.showcase__brands-item
+						a.showcase__brands-link(href="#") reebok
+					li.showcase__brands-item
+						a.showcase__brands-link.showcase__brands-link--active(href="#") addidas
+					li.showcase__brands-item
+						a.showcase__brands-link(href="#") nike
+					li.showcase__brands-item
+						a.showcase__brands-link(href="#") active
+		//showcase list of cards
+		ul.showcase__list
+			+card("arrivals__card", "img/Product_1.png", "img/Product_1@2x.png 2x","144","216", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_2.png", "img/Product_2@2x.png 2x","159","214", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_3.png", "img/Product_3@2x.png 2x","170","211", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_1.png", "img/Product_1@2x.png 2x","144","216", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_1.png", "img/Product_1@2x.png 2x","144","216", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_2.png", "img/Product_2@2x.png 2x","159","214", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_3.png", "img/Product_3@2x.png 2x","170","211", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_1.png", "img/Product_1@2x.png 2x","144","216", "Reebok Track Jacket","100$")
+			+card("arrivals__card", "img/Product_1.png", "img/Product_1@2x.png 2x","144","216", "Reebok Track Jacket","100$")
+			li.showcase__button-box
+				button.showcase__more(type="button")
+					span.showcase__more-decor
